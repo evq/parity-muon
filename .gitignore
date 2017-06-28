@@ -1,0 +1,17 @@
+# Generic ignores
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Project specific ignores
+
+node_modules
+
+# electron-packager output dirs
+*-darwin-x64
+*-win32-x64
+*-win32-ia32
+*-linux-x64

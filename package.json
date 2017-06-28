@@ -1,0 +1,17 @@
+{
+  "name": "parity-muon",
+  "productName": "Parity Ethereum Browser",
+  "repository": "https://github.com/evq/parity-muon",
+  "description": "Parity bundled with https://github.com/brave/muon",
+  "version": "0.0.1",
+  "devDependencies": {
+    "electron-packager": "brave/electron-packager",
+    "electron-prebuilt": "brave/electron-prebuilt"
+  },
+  "main": "main.js",
+  "scripts": {
+    "build": "cd parity && build --release --verbose",
+    "package": "./node_modules/electron-packager/cli.js . --overwrite Parity --platform=linux --arch=x64",
+    "start": "./node_modules/.bin/electron ."
+  }
+}
